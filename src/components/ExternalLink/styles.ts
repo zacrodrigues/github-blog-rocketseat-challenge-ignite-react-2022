@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 interface ExternalLinkContainerProps {
   variant?: 'iconLeft'
@@ -7,8 +7,8 @@ interface ExternalLinkContainerProps {
 export const ExternalLinkContainer = styled.a<ExternalLinkContainerProps>`
   border: none;
   background: none;
-  color: ${({ theme }) => theme.colors["brand-blue"]};
-  font-size: ${({ theme }) => theme.textSizes["components-link"]};
+  color: ${({ theme }) => theme.colors['brand-blue']};
+  font-size: ${({ theme }) => theme.textSizes['components-link']};
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -25,10 +25,12 @@ export const ExternalLinkContainer = styled.a<ExternalLinkContainerProps>`
   }
 
   &:hover {
-    border-color: ${({ theme }) => theme.colors["brand-blue"]};
+    border-color: ${({ theme }) => theme.colors['brand-blue']};
   }
 
-  ${({ variant }) => variant === 'iconLeft' && css`
-    flex-direction: row-reverse;
-  `}
+  ${({ variant }) =>
+    variant === 'iconLeft' &&
+    css`
+      flex-direction: row-reverse;
+    `}
 `

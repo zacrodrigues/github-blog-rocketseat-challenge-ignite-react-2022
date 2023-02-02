@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SpinnerContainer = styled.div`
   margin: 0 auto;
@@ -25,11 +25,11 @@ export const SpinnerContainer = styled.div`
     }
 
     .sk-chase-dot:before {
-      content: "";
+      content: '';
       display: block;
       width: 25%;
       height: 25%;
-      background-color: ${({ theme }) => theme.colors["base-subtitle"]};
+      background-color: ${({ theme }) => theme.colors['base-subtitle']};
       border-radius: 100%;
       animation: sk-chase-dot-before 2s infinite ease-in-out both;
     }
@@ -94,4 +94,4 @@ export const SpinnerContainer = styled.div`
       }
     }
   }
-`;
+`

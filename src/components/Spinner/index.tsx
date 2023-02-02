@@ -1,4 +1,4 @@
-import { SpinnerContainer } from "./styles";
+import { SpinnerContainer } from './styles'
 
 export function Spinner() {
   return (
@@ -12,5 +12,5 @@ export function Spinner() {
         <div className="sk-chase-dot"></div>
       </div>
     </SpinnerContainer>
-  );
+  )
 }

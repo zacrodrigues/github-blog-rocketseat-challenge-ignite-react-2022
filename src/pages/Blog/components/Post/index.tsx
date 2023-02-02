@@ -1,6 +1,6 @@
-import { IPost } from "../..";
-import { relativeDateFormatter } from "../../../../utils/formatter";
-import { PostContainer } from "./styles";
+import { IPost } from '../..'
+import { relativeDateFormatter } from '../../../../utils/formatter'
+import { PostContainer } from './styles'
 
 interface PostProps {
   post: IPost

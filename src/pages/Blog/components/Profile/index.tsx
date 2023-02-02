@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ExternalLink } from "../../../../components/ExternalLink";
-import { ProfileContainer, ProfileDetails, ProfilePicture } from "./styles";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ExternalLink } from '../../../../components/ExternalLink'
+import { ProfileContainer, ProfileDetails, ProfilePicture } from './styles'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBuilding, faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import { useCallback, useEffect, useState } from "react";
-import { api } from "../../../../lib/axios";
-import { Spinner } from "../../../../components/Spinner";
+import { faBuilding, faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import { useCallback, useEffect, useState } from 'react'
+import { api } from '../../../../lib/axios'
+import { Spinner } from '../../../../components/Spinner'
 
 const username = import.meta.env.VITE_GITHUB_USERNAME
 
@@ -50,7 +50,11 @@ export function Profile() {
             <header>
               <h1>{profileData.name}</h1>
 
-              <ExternalLink text="Github" href={profileData.html_url} target='_blank' />
+              <ExternalLink
+                text="Github"
+                href={profileData.html_url}
+                target="_blank"
+              />
             </header>
 
             <p>{profileData.bio}</p>
