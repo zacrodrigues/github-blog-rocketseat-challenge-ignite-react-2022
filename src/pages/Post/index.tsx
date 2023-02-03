@@ -26,11 +26,11 @@ export function Post() {
     } finally {
       setIsLoading(false)
     }
-  }, [postData])
+  }, [id])
 
   useEffect(() => {
     getPostDetails()
-  }, [])
+  }, [getPostDetails])
 
   return (
     <>
